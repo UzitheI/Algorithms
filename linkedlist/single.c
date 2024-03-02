@@ -13,7 +13,9 @@ int main(){
     struct node* head=NULL;
     head=(nodeType*) malloc(sizeof(nodeType));
     head->info=34;
-    printf("info:%d",head->info);
-    return 0;
 
+
+    struct node* current= malloc(sizeof(nodeType));
+    current->info=45;
+    head->link=current;
 }
